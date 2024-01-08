@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800,900');
+
+body {
+	background-color: #EEEEEE;
+}
+
+html, body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    height: 100px;
+	transition: .5s ease;
+}
+
+header:hover{
+    background-color: #252525;
+    transition: .5s ease;
+}
+
+#title{
+    background-image: url("./files/titleBlack.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 280px;
+    height: 280px;
+    transition: .4s ease;
+}
+
+header:hover #title{
+    background-image: url(./files/title.png);
+    background-size: contain;
+    width: 295px;
+    height: 295px;
+    transition: .4s ease;
+}
+
+.container {
+	margin: auto;
+	width: 30%;
+	align-items: center;
+	margin-top: 180px;
+	margin-bottom: 120px;
+}
+
+.navBar {
+	background-color: #EEEEEE;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	height: 55px;
+	margin-bottom: 10px;
+}
+
+.navBar > button {
+	background-color: #252525;
+	color: white;
+	width: 49.5%;
+	font-size: large;
+	border: none;
+	border-radius: 6px;
+}
+
+.main {
+	background-color: white;
+	color: #252525;
+	display: flex;
+	flex-direction: column;
+	padding: 20px;
+	gap: 10px;
+}
+
+.main > input {
+	font-family: 'Poppins', sans-serif;
+	width: 98%;
+	background-color: transparent;
+	color: #252525;
+	height: 30px;
+    font-size: medium;
+    border: 1px solid black;
+    border-radius: 8px;
+}
+
+.main > input::placeholder{
+	transition: .3s linear;
+}
+
+.main > input:focus::placeholder {
+	color: transparent;
+	transition: .3s linear;
+}
+
+label{
+	font-size: small;
+    color: #1da756;
+	margin-top: 10px;
+	margin-bottom: -5px;
+}
+
+#logTitle {
+	font-size: xx-large;
+	margin-bottom: 5px;
+	margin-top: 8px;
+	text-align: center;
+}
+
+#descp {
+	font-size: large;
+	margin-top: -5px;
+	margin-bottom: 5px;
+	text-align: center;
+	font-weight: 400;
+}
+
+.mainBtn {
+	margin-top: 35px;
+	margin-bottom: 15px;
+    font-size: larger;
+    border: 1px solid black;
+    border-radius: 8px;
+    height: 40px;
+    background-color: #1da756;
+    color: white;
+	transition: .3s ease-in;
+}
+
+.mainBtn:hover{
+	box-shadow: 0px 10px 15px #252525;
+    transition: .3s ease-in;
+    transform: translateY(-5px);
+}
+
+.genderContainer {
+	margin-top: 25px;
+	margin-bottom: -5px;
+	width: 100%;
+	height: auto;
+	text-align: center;
+	border: transparent;
+	border-radius: 8px;
+}
+
+.genderContainer > label{
+	color: #252525;
+	font-size: large;
+	margin-right: 30px;
+}
+
+input[type="radio"]{
+	accent-color: #1da756;
+	transform: scale(1.2); 
+}
+
+.hidden {
+	display: none;
+	transition: .4s ease-in-out;
+}
+
+.check{
+	width: 15px;
+}
+
+.activeBtn {
+	border-top: #1da756 solid 5px;
+	transition: .4s ease-in-out;
+}
+
+.hiddenBtn {
+	opacity: 0.4;
+	background-color: gray;
+	transition: .4s ease-in-out;
+}
+
+.check{
+	background: url("./files/checkmark.png") no-repeat right;
+	background-size: contain;
+}
+
+footer{
+    background-color: #252525;
+    width: 100%;
+    height: 400px;
+    align-content: center;
+}
+
+footer>div{
+    background-image: url("./files/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 400px;
+    width: 100%;
+}
+
+#loginComplete, #signComplete{
+	text-align: center;
+}
+
+#gotoMainBtn{
+	border: #252525 solid 1px;
+	color: #252525;
+	border-radius: 8px;
+	text-align: center;
+	font-size: xx-large;
+	text-decoration: none;
+	transition: .3s ease-in;
+}
+
+#gotoMainBtn:hover{
+	box-shadow: 0px 10px 15px #252525;
+    transition: .3s ease-in;
+    transform: translateY(-5px);
+}
+

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login</title>
+
+		<link rel="stylesheet" href="loginStyle.css" />
+
+		<script defer src="./loginScript.js"></script>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+		<script src="./mainScript.js"></script>
+	</head>
+	<body>
+		<header id="header">
+			<div id="title"></div>
+		</header>
+
+		<div class="container">
+			
+			<div class="navBar">
+				<button class="activeBtn" id="gotoLogin">Login</button>
+				<button class="hiddenBtn" id="gotoSign">Sign up</button>
+			</div>
+
+			<!-- form for login page -->
+			<form class="main" id="loginMain" onsubmit="return false">
+				<h1 id="logTitle">Login</h1>
+				<h1 id="descp">Enter your name and password:</h1>
+				<label for="email">Email address:</label>
+				<input
+					name="email"
+					type="email"
+					id="emailLogField"
+					placeholder="Email"
+				>
+				</input>
+				<label for="pwd">Password:</label>
+				<input
+					name="pwd"
+					type="password"
+					id="pwdLogField"
+					placeholder="Password"
+				/>
+
+				<button id="loginBtn" class="mainBtn" type="submit">Login</button>
+			</form>
+
+			<!-- form for sign up page -->
+			<form class="main hidden" id="signMain" onsubmit="return false">
+				<h1 id="logTitle">Sign up</h1>
+				<h1 id="descp">Please fill in the form:</h1>
+				<label for="firstName">First Name:</label>
+				<input name="firstName" placeholder="First Name" type="text" id="firstName" />
+				<label for="lastName">Last Name:</label>
+				<input name="lastName" placeholder="Last Name" type="text" id="lastName" />
+
+				<div class="genderContainer" id="genderContainer">
+					<input 
+						type="radio" 
+						name="gender" 
+						value="male" 
+						id="male" 
+					/>
+					<label for="male">Male</label>
+					<input
+						type="radio"
+						name="gender"
+						value="female"
+						id="female"
+					/>
+					<label for="female">Female</label>
+					<input
+						type="radio"
+						name="gender"
+						value="other"
+						id="other"
+					/>
+					<label for="other">Other</label>
+				</div>
+
+				<label for="email">Email address:</label>
+				<input
+					name="email"
+					type="email"
+					id="emailSignField"
+					placeholder="Email"
+				/>
+				<label for="pwd">Password:</label>
+				<input
+					name="pwd"
+					type="password"
+					id="pwdSignField"
+					placeholder="Password"
+				/>
+				<label for="pwd">Confirm Password:</label>
+				<input
+					name="pwd"
+					type="password"
+					id="pwdConfField"
+					placeholder="Confirm password"
+				/>
+
+				<button id="signBtn" class="mainBtn" type="submit">Sign Up</button>
+			</form>
+
+			<div id="signComplete" class="main hidden">
+				<h1>You are signed up!</h1>
+			</div>
+
+			<div id="loginComplete" class="main hidden">
+				<h1>You are logged in!</h1>
+				<a href="./main.html" id="gotoMainBtn">
+					Go To Main page
+				</a>
+			</div>
+		</div>
+
+		<footer>
+			<div></div>        
+		</footer>
+
+	</body>
+</html>

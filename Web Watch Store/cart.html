@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Cart</title>
+
+    <link rel="stylesheet" href="./cart.css"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./mainScript.js"></script>
+
+</head>
+<body>
+    <header id="header">
+        <a href="./main.html">
+            <div id="title"></div>
+        </a>
+    </header>
+
+    <h1 id="pageTitle">
+        My Shopping Cart
+    </h1>
+
+    <div class="mainContainer">
+        <div class="innerContainer">
+            <p>Description</p>
+            <p>Quantity</p>
+            <p>Remove</p>
+            <p>Price</p>
+        </div>
+
+        <div class="product hidden" id="product1">
+            <div class="descrp">
+                <a href="./watchPage1.html">
+                    <div style="background-image: url(./files/watch1_1.avif);"></div>
+                </a>
+                <p>Passage Chrono watch</p>
+            </div>
+            <div class="quantity">
+                <button id="minusQuan1" onclick="minusProd(1)" disabled="true">-</button>
+                <p id="quantity1">0</p>                
+                <button id="plusQuan" onclick="plusProd(1)">+</button>
+            </div>
+            <button class="removeBtn" id="removeBtn1" onclick="removeProd(1)">X</button>
+            <p class="price" id="price1">430</p>
+        </div>
+        
+        <div class="product hidden" id="product2">
+            <div class="descrp">
+                <a href="./watchPage2.html">
+                    <div style="background-image: url(./files/watch2_1.avif);"></div>
+                </a>
+                <p>Octea Lux Chrono watch</p>
+            </div>
+            <div class="quantity">
+                <button id="minusQuan2" onclick="minusProd(2)" disabled="true">-</button>
+                <p id="quantity2">0</p>                
+                <button id="plusQuan" onclick="plusProd(2)">+</button>
+            </div>
+            <button class="removeBtn" id="removeBtn2" onclick="removeProd(2)">X</button>
+            <p class="price" id="price2">430</p>
+        </div>
+        
+        
+        <div class="product hidden" id="product3">
+            <div class="descrp">
+                <a href="./watchPage3.html">
+                    <div style="background-image: url(./files/watch3_1.avif);"></div>
+                </a>
+                <p>Octea Nova watch</p>
+            </div>
+            <div class="quantity">
+                <button id="minusQuan3" onclick="minusProd(3)" disabled="true">-</button>
+                <p id="quantity3">0</p>                
+                <button id="plusQuan" onclick="plusProd(3)">+</button>
+            </div>
+            <button class="removeBtn" id="removeBtn3" onclick="removeProd(3)">X</button>
+            <p class="price" id="price3">460</p>
+        </div>
+
+        
+        <div class="product hidden" id="product4">
+            <div class="descrp">
+                <a href="./watchPage4.html">
+                    <div style="background-image: url(./files/watch4_1.avif);"></div>
+                </a>
+                <p>Crystalline Aura watch</p>
+            </div>
+            <div class="quantity">
+                <button id="minusQuan4" onclick="minusProd(4)" disabled="true">-</button>
+                <p id="quantity4">0</p>                
+                <button id="plusQuan" onclick="plusProd(4)">+</button>
+            </div>
+            <button class="removeBtn" id="removeBtn4" onclick="removeProd(4)">X</button>
+            <p class="price" id="price4">450</p>
+        </div>
+
+        
+        <div class="product hidden" id="product5">
+            <div class="descrp">
+                <a href="./watchPage5.html">
+                    <div style="background-image: url(./files/watch5_1.avif);"></div>
+                </a>
+                <p>Octea Lux Sport watch</p>
+            </div>
+            <div class="quantity">
+                <button id="minusQuan5" onclick="minusProd(5)" disabled="true">-</button>
+                <p id="quantity5">0</p>                
+                <button id="plusQuan" onclick="plusProd(5)">+</button>
+            </div>
+            <button class="removeBtn" id="removeBtn5" onclick="removeProd(5)">X</button>
+            <p class="price" id="price5">480</p>
+        </div>
+
+        <div class="noItem hidden">
+            <p>Shopping Cart is empty</p>
+            <small>Add products to view them</small>
+        </div>
+
+        <div class="total">
+            <p>Total Amount:</p>
+            <p id="totalAmount">0</p>
+        </div>
+    </div>
+    <p id="instr">
+        Due to problems with shipping, we would be grateful if you added products to your cart and emailed us through Contact Us session. <br>
+        We apologize for these inconveniences.  
+    </p>
+    
+    <footer>
+        <div></div>        
+    </footer>
+</body>
+</html>

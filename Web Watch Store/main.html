@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShakES Watches</title>
+
+    <link rel="stylesheet" href="main.css">
+    <script defer src="./mainScript.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <div class="content">
+        <header id="header">
+            <a href="#catalogContainer" class="hover-1">Catalog</a>
+            <a href="#history" class="hover-1">History</a>
+            <a href="#main">
+                <div id="logo"></div>
+            </a>
+            <a href="#contact" id="logBtn" class="hover-1">Contact Us</a>
+            <a href="./cart.html" class="hover-1" onclick="gotoCart()">My Cart</a>
+        </header>
+
+        <div class="main" id="main">
+            <div id="bgmain"></div>
+            <div id="title"></div>
+        </div>
+
+        <div class="catalogContainer" id="catalogContainer">
+            <h1 id="catalogTitle">Our Catalog</h1>
+            <div class="catalog">
+
+                <a href="./watchPage1.html">
+                    <div class="item1" id="item1">
+                        <div></div>
+                        <p>Passage Chrono watch <br><b>$ 430</b></p>
+                    </div>
+                </a>
+
+                <a href="./watchPage2.html">
+                    <div class="item2" id="item2">
+                        <div></div>
+                        <p>Octea Lux Chrono watch <br><b>$ 430</b></p>
+                    </div>
+                </a>
+
+                <a href="./watchPage3.html">
+                    <div class="item3" id="item3">
+                        <div></div>
+                        <p>Octea Nova watch <br><b>$ 460</b></p>
+                    </div>
+                </a>
+
+                <a href="./watchPage4.html">
+                    <div class="item4" id="item4">
+                        <div></div>
+                        <p>Crystalline Aura watch <br><b>$ 450</b></p>
+                    </div>
+                </a>
+
+                <a href="./watchPage5.html">
+                    <div class="item5" id="item5">
+                        <div></div>
+                        <p>Octea Lux Sport watch <br><b>$ 480</b></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+
+        <div class="historyContainer" id="history">
+
+            <center>
+                <h1 id="historyTitle">Our History</h1>
+            </center>
+
+            <div class="history">
+                <div class="box1 reveal">
+                    <p> In 1927, a young British secretary called Mercedes Gleitze took a place in the annals <br>
+                        of watchmaking history with a sporting exploit that
+                        brought the first waterproof watch to <br> the world’s attention.
+                        The 26 year-old swam the English Channel wearing a Rolex Oyster, <br>
+                        spending more than 10 hours in the chilly waters between France and Great Britain.
+                        At the <br> end of the swim, the waterproof wristwatch was declared to be in perfect working
+                        order.
+                    </p>
+                    <img src="./files/history1.jpg" alt="watches" width="700px">
+                </div>
+
+                <div class="box2 reveal">
+                    <img src="./files/history2.jpg" alt="Mercedes" width="700px">
+                    <p>
+                        In 1927, a young British secretary called Mercedes Gleitze took a place in the annals <br>
+                        of watchmaking history with a sporting exploit that
+                        brought the first waterproof watch to <br> the world’s attention.
+                        The 26 year-old swam the English Channel wearing a Rolex Oyster, <br>
+                        spending more than 10 hours in the chilly waters between France and Great Britain.
+                        At the <br> end of the swim, the waterproof wristwatch was declared to be in perfect working
+                        order.
+                    </p>
+                </div>
+
+                <div class="box3 reveal">
+                    <p>
+                        She was the first Englishwoman to manage the arduous swim, still a rare feat at the time, <br>
+                        and she earned huge popular acclaim. Rolex’s founder and director, Hans Wilsdorf, <br>
+                        celebrated the landmark event with a full-page advertisement on the front of London’s <br>
+                        Daily Mail proclaiming the success of the first waterproof wristwatch and chronicling “the <br>
+                        debut of the Rolex Oyster and its triumphant march worldwide”. Mercedes Gleitze <br>
+                        effectively became the first Rolex Testimonee, a symbol of achievement who also <br>
+                        demonstrated the new watch’s qualities in action.
+                    </p>
+                    <img src="./files/history3.webp" alt="watches2" width="700px">
+                </div>
+            </div>
+            <div class="box4 reveal">
+                <p>It was a turning point. Although the wristwatch is taken for granted nowadays, a century ago pocket
+                    watches were the norm. The practical timepiece championed by Rolex owes <br>
+                    much of its success to the painstaking development of waterproofing.</p>
+                <img src="/files/history4.webp" alt="" width="400px">
+                <p id="name">Mercedes Gleitze</p>
+            </div>
+        </div>
+
+        <footer id="contact">
+            <h1>Contact Us!</h1>
+            <p>
+                Let's get conversation started. Tell us a bit about yourself. And
+                <br>we will get in touch with you as soon as we can.
+            </p>
+            <form action="https://formspree.io/f/myyvrbyr" method="POST" class="contactForm">
+                <input type="hidden" name="_captcha" value="false">
+                <div class="labels">
+                    <label for="First Name">First Name:</label>
+                    <label for="Last Name">Last Name:</label>
+                </div>
+
+                <div class="names">
+                    <input type="text" name="First Name" placeholder="First Name" required>
+                    <input type="text" name="Last Name" placeholder="Last Name" required>
+                </div>
+
+                <label for="E-mail">E-mail address:</label>
+                <input type="email" name="E-mail" id="emailInp" placeholder="E-mail" required>
+
+                <label for="Message">Message:</label>
+                <textarea name="Message" id="msgInp" placeholder="Message" required></textarea>
+
+                <button id="submitBtn">Submit</button>
+            </form>
+        </footer>
+    </div>
+</body>
+
+</html>
