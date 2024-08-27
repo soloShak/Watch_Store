@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ShakES Watches</title>
+
+    <link rel="stylesheet" href="./watchPage.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="./mainScript.js"></script>
+    
+</head>
+<body>
+    
+    <header id="header">
+        <a href="./main.html">
+            <div id="title"></div>
+        </a>
+
+    </header>
+
+    <div class="mainContainer">
+        <div class="innerContainer">
+           
+            <div id="image" style="background-image: url(./files/watch1_1.avif);">
+                <button id="backwardBtn" onclick="backImg('1')"></button>
+                <button id="forwardBtn" onclick="forwardImg('1')"></button>
+            </div>
+
+            <div class="text">
+                <h1>Passage Chrono watch</h1>
+                <p id="descr">Swiss Made, Leather strap, Red, Rose gold-tone finish</p>
+                <p id="price">$ 430</p>
+                <p>A perfect blend of modernity and tradition, this luxurious chronograph watch by Swarovski will elevate any outfit. Featuring a contemporary rose-gold tone PVD coated stainless steel case and burgundy sunray dial, the opulent and bold design sparkles with 100 clear crystals, set in rich pavé. The subtly-integrated chronograph movement, trio of dial counters and genuine leather strap in burgundy, with a crocodile pattern and quick-release mechanism, add understated flair. A timeless classic to wear anywhere, it complements anything from jeans and a t-shirt to a ball gown. Made in Switzerland, it is water resistant to 50m. Swiss Made.</p>
+                <button id="cartBtn" onclick="addProd(1)">ADD TO CART</button>
+                <div class="added hidden" id="added1">
+                    <p>The Product has been added to your <a href="./cart.html">Cart</a></p>
+                </div>
+                <div class="repeat hidden" id="repeat1">
+                    <p>The Product is already in your <a href="./cart.html">Cart</a></p>
+                </div>
+            </div>
+        </div>
+        <div class="catalogContainer" id="catalogContainer">
+            <h1 id="catalogTitle">You May Be Also Interested In</h1>
+            <div class="catalog">
+                <a href="./watchPage2.html">
+                    <div class="item2" id="item2">
+                        <div style="background-image: url(./files/watch2_1.avif);"></div>
+                        <p>Octea Lux Chrono watch <br><b>$ 430</b></p>
+                    </div>
+                </a>
+
+                <a href="./watchPage3.html">
+                    <div class="item3" id="item3">
+                        <div style="background-image: url(./files/watch3_1.avif);"></div>
+                        <p>Octea Nova watch <br><b>$ 460</b></p>
+                    </div>
+                </a>
+                
+                <a href="./watchPage4.html">
+                    <div class="item4" id="item4">
+                        <div style="background-image: url(./files/watch4_1.avif);"></div>
+                        <p>Crystalline Aura watch <br><b>$ 450</b></p>
+                    </div>
+                </a>
+
+                <a href="./watchPage5.html">
+                    <div class="item5" id="item5">
+                        <div style="background-image: url(./files/watch5_1.avif);"></div>
+                        <p>Octea Lux Sport watch <br><b>$ 480</b></p>
+                    </div>
+                </a>
+            </div>
+        </div>
+        
+
+    </div>
+    <footer>
+        <div></div>        
+    </footer>
+
+</body>
+</html>
